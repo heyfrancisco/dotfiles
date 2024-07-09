@@ -9,8 +9,8 @@ export ZSH="$HOME/.oh-my-zsh"
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
 
-#ZSH_THEME="michelebologna"
 ZSH_THEME="shukri"
+
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -72,7 +72,7 @@ ZSH_THEME="shukri"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -92,17 +92,27 @@ source $ZSH/oh-my-zsh.sh
 # ############################ #
 # ====== ENV VARIABLES ======
 # Note: To have the $ENV working we need to use "" instead of ''
-export LAB="$HOME/Desktop/LAB"
-export BRAIN="$HOME/Desktop/LAB/notes/second-brain/"
+export DEV="$HOME/Developer/"
+export BRAIN="$HOME/Developer/notes/second-brain/"
 export DESKTOP="$HOME/Desktop/"
+export IBM_CLOUD="$HOME/Developer/ibm-cloud/"
 
 # ====== ALIAS ======
 # cd
-alias lab='cd $LAB'
+alias dev='cd $DEV'
 alias brain='cd $BRAIN'
 alias dk='cd $DESKTOP'
+alias cloud='cd $IBM_CLOUD'
 
 # ls 
 alias ls='ls --color=auto'
 alias ll='ls -la'
 alias vi='nvim'
+
+# ==== Custom Settings ====
+# IBM Cloud CLI Autocompletion
+source /usr/local/ibmcloud/autocomplete/zsh_autocomplete
+
+# === PATH === 
+export PATH="/usr/local/opt/ruby/bin:$PATH"
+eval "$(rbenv init - zsh)"
