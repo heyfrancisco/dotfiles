@@ -1,16 +1,11 @@
 {
-  // Python
   "[python]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "ms-python.python"
   },
-
-  // CSS
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-
-  // JavaScript/TypeScript
   "[typescriptreact]": {
     "editor.formatOnSave": true,
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -39,8 +34,6 @@
   },
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.enumMemberValues.enabled": true,
-
-  // Python
   "workbench.editorAssociations": {
     "*.ipynb": "jupyter-notebook"
   },
@@ -48,13 +41,9 @@
     "default": "right",
     "jupyter-notebook": "left"
   },
-
-  // Markdown
-  "markdown.preview.fontSize": 13,
+  "markdown.preview.fontSize": 14,
   "markdown-preview-enhanced.previewTheme": "one-dark.css",
   "files.autoSave": "onFocusChange",
-
-  // Other language and editing settings
   "editor.inlineSuggest.enabled": true,
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
@@ -67,110 +56,51 @@
     "**/.next": true
   },
   "search.useIgnoreFiles": true,
-  "cSpell.userWords": [
-    "Ainda",
-    "Arlindo",
-    "Asseco",
-    "Azevedo",
-    "AZEVEDOS",
-    "chakra",
-    "Configuração",
-    "continuidade",
-    "créditos",
-    "diretamente",
-    "EMEA",
-    "está",
-    "falar",
-    "Falar",
-    "focusables",
-    "iframes",
-    "informação",
-    "INPI",
-    "levantado",
-    "Marcar",
-    "Paks",
-    "pendente",
-    "Ponto",
-    "reunião",
-    "situação",
-    "sobre",
-    "temos",
-    "Thiago",
-    "tratar",
-    "tunel",
-    "Túnel",
-    "uuid"
-  ],
-
-  // Git and Git Lens
   "git.autofetch": true,
   "gitlens.advanced.fileHistoryFollowsRenames": true,
   "gitlens.blame.ignoreWhitespace": true,
   "gitlens.blame.avatars": false,
   "gitlens.currentLine.enabled": false,
-
-  // ==== VSCode Style ====
-  // 1. Stylistic settings
-  "editor.fontFamily": "JetBrains Mono",
+  "editor.fontFamily": "JetBrainsMono Nerd Font",
   "editor.renderWhitespace": "trailing",
   "editor.fontLigatures": true,
-  "editor.bracketPairColorization.enabled": true, // Native bracket colorization
+  "editor.bracketPairColorization.enabled": true,
   "editor.suggest.showStatusBar": false,
-  "editor.tabSize": 2,
+  "editor.tabSize": 3,
   "breadcrumbs.filePath": "last",
   "workbench.fontAliasing": "auto",
-  "editor.fontSize": 14,
-  "editor.lineHeight": 1.7,
-  "editor.rulers": [80, 120],
-  "editor.renderLineHighlight": "all",
+  "editor.fontSize": 15,
+  "editor.fontWeight": "400",
+  "editor.lineHeight": 2,
+  "editor.guides.indentation": false,
+  "editor.rulers": [120],
+  "editor.renderLineHighlight": "gutter",
   "workbench.editor.labelFormat": "short",
   "explorer.compactFolders": false,
   "editor.semanticHighlighting.enabled": false,
   "breadcrumbs.enabled": false,
   "editor.scrollbar.horizontal": "hidden",
   "editor.scrollbar.vertical": "hidden",
-  "workbench.statusBar.visible": false,
-  "workbench.activityBar.location": "hidden",
-  "workbench.sideBar.location": "right",
-
-  // 2. Theme and Visuals
-  "workbench.colorTheme": "Nord",
-  "workbench.iconTheme": "symbols",
+  "workbench.iconTheme": null,
   "symbols.hidesExplorerArrows": true,
   "window.autoDetectColorScheme": true,
-
-  // 3. Disable the minimap
   "editor.minimap.enabled": false,
-
-  // 4. Disbale folding
   "editor.folding": false,
-
-  // 5. Zen Mode
   "zenMode.centerLayout": false,
   "zenMode.fullScreen": false,
   "zenMode.hideStatusBar": false,
   "zenMode.hideLineNumbers": false,
-
-  // 8. New file when you open a new window to start writting
   "workbench.startupEditor": "newUntitledFile",
-  // ==== END VSCode Style ====
-
-  // 9. Tags
-  // Tone down default settings for Better Comments extension
   "better-comments.tags": [
-    // XXX Hacks
     {
       "tag": "XXX",
-      "color": "#FF2D00", // Red
+      "color": "#FF2D00",
       "strikethrough": false,
       "underline": false,
       "backgroundColor": "transparent",
       "bold": false,
       "italic": false
     },
-    /*
-     // Nested comments
-     */
     {
       "tag": "//",
       "color": "#149687",
@@ -180,7 +110,6 @@
       "bold": false,
       "italic": false
     },
-    // TODOs
     {
       "tag": "todo",
       "color": "#FF8C00",
@@ -191,20 +120,26 @@
       "italic": false
     }
   ],
-
-  // Terminal
   "terminal.integrated.defaultProfile.osx": "zsh",
-  "terminal.external.osxExec": "iTerm.app",
+  "terminal.external.osxExec": "Hyper.app",
   "files.associations": {
     "*.py": "python"
   },
-
-  // Markdown
   "[markdown]": {
     "editor.defaultFormatter": "yzhang.markdown-all-in-one"
   },
   "markdown-pdf.displayHeaderFooter": false,
   "markdown-pdf.highlightStyle": "nord.css",
-  "markdown-preview-enhanced.revealjsTheme": "beige.css"
+  "markdown-preview-enhanced.revealjsTheme": "beige.css",
+  "workbench.colorCustomizations": {},
+  "workbench.colorTheme": "Dracula.min",
+  "editor.wordWrapColumn": 120,
+  "workbench.preferredDarkColorTheme": "Evondev Tailwind Theme Italic",
+  "editor.wordWrap": "bounded",
+  "workbench.statusBar.visible": false,
+  "prettier.printWidth": 120,
+  "workbench.activityBar.location": "hidden",
+  "svelte.enable-ts-plugin": true,
+  "workbench.tree.renderIndentGuides": "none",
+  "workbench.tree.indent": 4
 }
-
